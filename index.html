@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change Calculator</title>
+    <style>
+
+   
+    .inputs{
+      height: 100px;
+      background:gainsboro;
+      font-family:Arial, Helvetica, sans-serif;
+      border-radius: 25px;
+      width: 900px;
+      text-align: center;
+    }
+
+    .howMuchDue{
+      float: left;
+      padding-left: 5%;
+    }
+
+    .howMuchTendered{
+      float: left;
+      padding-left: 5%;
+    }
+
+    .quarters{
+      float: left;
+      padding-left: 50px;
+    }
+
+    .dimes{
+      float: left;
+      padding-left: 50px;
+    }
+
+    .nickels{
+      float: left;
+      padding-left: 50px;
+    }
+
+    .pennies{
+      float: left;
+      padding-left: 50px;
+    }
+
+    .dollars{
+      background-image: url(http://png.pngtree.com/element_origin_min_pic/17/07/09/2993e92d69e2cc6265c75e789bce8014.jpg);
+      font-family:Arial, Helvetica, sans-serif;
+      border-radius: 25px;
+      width: 900px;
+      text-align: center;
+    }
+
+    .coins{
+      font-family:Arial, Helvetica, sans-serif;
+      border-radius: 25px;
+      background:gainsboro;
+      width: 900px;
+      text-align: center;
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- Write your markup here -->
+    <h1>Change Calculator</h1>
+
+    <div class="inputs">
+    
+    
+      <div class="howMuchDue">
+      <H3>How much is due for the sale?</H2>
+      <input type="text" id="amount-due" size="35"/>
+      </div>
+      
+      <div class="howMuchTendered">
+      <H3>How much has the customer given you?</H2>
+      <input type="text" id="amount-received" size="35"/>
+      </div>
+    <br>
+    <br>
+    <button id ="calculate-change">Calculate</button>
+    </div>
+    
+    
+
+    <div class="dollars">
+      <h1>Dollars</h1>
+      <p id="dollars-output">Change in Dollars</p>
+    </div>
+
+
+
+    <div class="coins">
+      <div class="quarters">
+        <h1>Quarters</h1>
+        <p id="quarters-output">Change in Quarters</p>
+      </div>
+      
+      <div class="dimes">
+        <h1>Dimes</h1>
+        <p id="dimes-output">Change in Dimes</p>
+      </div>
+      
+      <div class="nickels">
+        <h1>Nickels</h1>
+        <p id="nickels-output">Change in Nickels</p>
+      </div>
+      
+      <div class="pennies">
+        <h1>Pennies</h1>
+        <p id="pennies-output">Change in Pennies</p>
+      </div>
+    </div>
+
+
+    <!-- Don't forget to add your <script> tag here -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
